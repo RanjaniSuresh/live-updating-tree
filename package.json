@@ -1,0 +1,21 @@
+{
+  "name": "tree-view-node-rethinkdb",
+  "version": "1.0.0",
+  "description": "Real time Tree View application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ranjani Suresh <ranjani.suresh@utdallas.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.2.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "rethinkdb": "^2.3.3",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}

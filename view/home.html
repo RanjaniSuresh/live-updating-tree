@@ -1,0 +1,25 @@
+<md-content flex id="content" layout='column' ng-controller='asyncFacController'>
+
+  <md-card ng-repeat='facInfo in factoryData track by $index'>
+    <md-card-title>
+    <md-card-title-text>
+        <span class="md-headline">{{facInfo.name}}</span>
+      </md-card-title-text>
+      <md-card-actions layout="row" layout-align="end center">
+       <md-button ng-click="factoryModal($event, facInfo)">Edit</md-button>
+       <md-button ng-click="deleteFactory($event, facInfo)">Delete</md-button>
+     </md-card-actions>
+
+    </md-card-title>
+    <md-card-content>
+      <md-list-item class="md-2-line">
+        <div class="md-list-item-text" layout="column">
+          <p  ng-repeat="child in facInfo.children track by $index"> {{child}}</p>
+        </div>
+      </md-list-item>
+    </md-card-content>
+      <md-card-footer>
+           {{facInfo.lower_bound}} : {{facInfo.upper_bound}}
+      </md-card-footer>
+  </md-card> 
+</md-content>
